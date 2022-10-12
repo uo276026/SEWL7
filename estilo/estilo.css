@@ -1,0 +1,75 @@
+/*********************
+Lara Fernández - UO276026
+Descripción de los estilos
+**********************/
+
+header {
+  color: #fff;    
+  background-color:	#F42D2D; 
+  text-transform: uppercase;
+  padding: 2em; 
+  font-family: Garamond, serif;
+  text-align: center;     
+}
+
+nav{
+  background-color:	#F42D2D; 
+  color: #fff;  
+  font-family: Arial, sans-serif;
+  text-align: center;    
+  white-space: pre;
+}
+
+a {
+  color: #fff; 
+  text-decoration: none;
+  padding: 14px 25px;
+  display: inline-block;
+  text-transform: uppercase;
+}
+
+
+main {
+  font-family: Arial, sans-serif;
+  color: #545454;
+  background-color: #fff;  
+  width: 80%;
+  }
+
+h2, h3{
+  color:#232323; 
+  background-color:	#FFEAAE; 
+}
+
+dt{
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+dd{
+  margin: 0;
+  padding: 0 0 0.5em 0;
+}
+
+
+table, th, td {
+  border: 1px solid;
+  text-align: center;
+}
+
+video{
+    height: 50%;
+    width:90%;
+}
+
+footer{
+  color: #fff;    
+  background-color:	#000; 
+  font-family: Garamond, serif;
+  text-align: center;    
+}
+
+
+
+
+

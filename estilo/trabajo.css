@@ -1,0 +1,30 @@
+/*********************
+Lara Fernández - UO276026
+Descripción de los estilos
+**********************/
+
+header {
+  color: #fff;    
+  background-color:	#DB2A2A; 
+  text-transform: uppercase;
+  padding: 2em; 
+  text-align: center;     
+}
+
+main {
+  font-family: Tahoma, sans-serif;
+  color: #545454;
+  background-color: #fff;  
+  }
+
+h2, h3{
+  color:#232323; 
+}
+
+
+nav{
+  font-family: Tahoma, sans-serif;
+  text-align: center;    
+}
+
+
