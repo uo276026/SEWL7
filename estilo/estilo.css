@@ -3,65 +3,83 @@ Lara Fernández - UO276026
 Descripción de los estilos
 **********************/
 
+/* Especifidad 001 */
+body{
+  font-family: Garamond, serif;
+  gap: 0.625em;
+  background-color: #fff;
+  padding: 0.625em;
+  color: #545454; 
+  font-family: Arial, sans-serif;
+}
+
+/* Especifidad 001 */
 header {
+  font-family: Garamond, serif;
   color: #fff;    
   background-color:	#F42D2D; 
   text-transform: uppercase;
-  padding: 2em; 
-  font-family: Garamond, serif;
-  text-align: center;     
-}
-
-nav{
-  background-color:	#8D0707; 
-  color: #fff;  
-  font-family: Arial, sans-serif;
+  padding: 1em;
   text-align: center;    
-  white-space: pre;
 }
 
+/* Especifidad 001 */
+nav{
+  background-color:	#F42D2D; 
+  white-space: pre-line;
+
+}
+
+/* Especifidad 001 */
 a {
   color: #fff; 
   text-decoration: none;
-  padding: 14px 25px;
+  padding: 0.875em 1.5625em;
   display: inline-block;
   text-transform: uppercase;
 }
 
+/* Especifidad 001 */
+main {  
+  padding:1em;
+  text-align: justify;  
+}
 
-main {
-  font-family: Arial, sans-serif;
-  color: #545454;
-  background-color: #fff;  
-  width: 80%;
-  }
-
+/* Especifidad 001 */
 h2, h3{
   color:#232323; 
   background-color:	#FFEAAE; 
+  width:18.75em;
 }
 
+
+/* Especifidad 001 */
 dt{
   font-weight: bold;
   text-decoration: underline;
+  padding-bottom: 0.5em;
 }
 
+/* Especifidad 001 */
 dd{
   margin: 0;
-  padding: 0 0 0.5em 0;
+  padding-bottom: 0.5em;
 }
 
-
+/* Especifidad 001 */
 table, th, td {
-  border: 1px solid;
+  padding: 0 0 0.5em 0;
+  border: 0.0625em solid;
   text-align: center;
 }
 
+/* Especifidad 001 */
 video{
     height: 50%;
     width:90%;
 }
 
+/* Especifidad 001 */
 footer{
   color: #fff;    
   background-color:	#000; 
@@ -69,7 +87,15 @@ footer{
   text-align: center;    
 }
 
+/* Especifidad 001 */
+form{ 
+	background-color:#FCF3DC;
+  padding:0.3125em;
+}
 
-
+/* Especifidad 002 */
+form input{
+	margin:0.5em;
+}
 
 
