@@ -8,6 +8,8 @@ nav, .item2 { grid-area: nav; }
 main, .item3 { grid-area: main; }
 footer, .item5 { grid-area: footer; }
 
+
+
   body {
     display: grid;
     grid-template-areas:

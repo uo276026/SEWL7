@@ -27,16 +27,18 @@ header {
 nav{
   background-color:	#F42D2D; 
   white-space: pre-line;
+  padding:1em;
 
 }
 
-/* Especifidad 001 */
-a {
+/* Especifidad 002 */
+nav a {
   color: #fff; 
   text-decoration: none;
   padding: 0.875em 1.5625em;
-  display: inline-block;
   text-transform: uppercase;
+  
+  
 }
 
 /* Especifidad 001 */
@@ -62,7 +64,6 @@ dt{
 
 /* Especifidad 001 */
 dd{
-  margin: 0;
   padding-bottom: 0.5em;
 }
 
@@ -93,9 +94,5 @@ form{
   padding:0.3125em;
 }
 
-/* Especifidad 002 */
-form input{
-	margin:0.5em;
-}
 
 
