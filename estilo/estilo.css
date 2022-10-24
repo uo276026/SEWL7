@@ -19,9 +19,11 @@ header {
   color: #fff;    
   background-color:	#F42D2D; 
   text-transform: uppercase;
-  padding: 1em;
-  text-align: center;    
+  padding: 1em;  
+  text-align:center
 }
+
+
 
 /* Especifidad 001 */
 nav{
@@ -44,7 +46,6 @@ nav a {
 /* Especifidad 001 */
 main {  
   padding: 1 em;
-  text-align: justify;  
 }
 
 /* Especifidad 001 */
@@ -68,10 +69,15 @@ dd{
 }
 
 /* Especifidad 001 */
-table, th, td {
+table, th{
   padding: 0 0 0.5em 0;
   border: 0.0625em solid;
-  text-align: center;
+}
+
+td{
+  padding: 0 0 0.5em 0;
+  border: 0.0625em solid;
+  text-align:center
 }
 
 /* Especifidad 001 */
@@ -84,8 +90,11 @@ video{
 footer{
   color: #fff;    
   background-color:	#000; 
-  font-family: Garamond, serif;
-  text-align: center;    
+  font-family: Garamond, serif;  
+}
+
+p{
+  text-align:justify
 }
 
 /* Especifidad 001 */
