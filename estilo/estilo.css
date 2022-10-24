@@ -10,7 +10,7 @@ body{
   background-color: #fff;
   padding: 0.625em;
   color: #545454; 
-  font-family: Arial, sans-serif;
+  
 }
 
 /* Especifidad 001 */
@@ -28,15 +28,18 @@ header {
 /* Especifidad 001 */
 nav{
   background-color:	#7C0303; 
+  color: #fff;  
   white-space: pre-line;
   padding:1em;
   height: 50em;
   gap:3em;
+  font-family: Arial, sans-serif;
 }
 
 /* Especifidad 002 */
 nav a {
   color: #fff; 
+  background-color:	#7C0303; 
   text-decoration: none;
   padding: 1em 1em;
   text-transform: uppercase;
@@ -46,6 +49,7 @@ nav a {
 /* Especifidad 001 */
 main {  
   padding: 1em;
+  font-family: Arial, sans-serif;
 }
 
 /* Especifidad 001 */
@@ -53,6 +57,7 @@ h2, h3{
   color:#232323; 
   background-color:	#FFEAAE; 
   width:18.75em;
+  font-family: Arial, sans-serif;
 }
 
 
@@ -101,4 +106,5 @@ p{
 form{ 
 	background-color:#FCF3DC;
   padding:0.3125em;
+  color:#232323; 
 }
