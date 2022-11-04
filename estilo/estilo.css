@@ -23,29 +23,6 @@ header {
   text-align:center
 }
 
-
-
-/* Especifidad 001 */
-nav{
-  background-color:	#7C0303; 
-  color: #fff;  
-  white-space: pre-line;
-  padding:1em;
-  height: 50em;
-  gap:3em;
-  font-family: Arial, sans-serif;
-}
-
-/* Especifidad 002 */
-nav a {
-  color: #fff; 
-  background-color:	#7C0303; 
-  text-decoration: none;
-  padding: 1em 1em;
-  text-transform: uppercase;
-  
-}
-
 /* Especifidad 001 */
 main {  
   padding: 1em;
@@ -61,29 +38,6 @@ h2, h3{
 }
 
 
-/* Especifidad 001 */
-dt{
-  font-weight: bold;
-  text-decoration: underline;
-  padding-bottom: 0.5em;
-}
-
-/* Especifidad 001 */
-dd{
-  padding-bottom: 0.5em;
-}
-
-/* Especifidad 001 */
-table, th{
-  padding: 0 0 0.5em 0;
-  border: 0.0625em solid;
-}
-
-td{
-  padding: 0 0 0.5em 0;
-  border: 0.0625em solid;
-  text-align:center
-}
 
 /* Especifidad 001 */
 video{
@@ -91,20 +45,10 @@ video{
     width:90%;
 }
 
-/* Especifidad 001 */
-footer{
-  color: #fff;    
-  background-color:	#000; 
-  font-family: Garamond, serif;  
-}
+
 
 p{
   text-align:justify
 }
 
-/* Especifidad 001 */
-form{ 
-	background-color:#FCF3DC;
-  padding:0.3125em;
-  color:#232323; 
-}
+
