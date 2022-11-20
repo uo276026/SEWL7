@@ -7,6 +7,7 @@ Descripción de los estilos
 
 h1{
     color:#123944; 
+    background-color: white;
     font-family: Arial, sans-serif;
 }
 
@@ -16,6 +17,12 @@ p{
 }
 
 
+label {
+  grid-column-end: span 5;
+  font-size:1.5em;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+}
 
 form {
   color: white;
@@ -26,7 +33,7 @@ form {
   margin: auto;
   display: grid;
   grid-template-columns: repeat(5, 3em);
-  grid-template-rows: repeat(11, 3em);
+  grid-template-rows: repeat(13, 3em);
   gap: 1em;
 }
 
@@ -36,6 +43,7 @@ input{
 
 textarea {
   background-color: #B8B3A8;
+  color:#4D4D4D;
   text-align: left;
   border-radius: 0.625em;
   grid-column-end: span 5;
@@ -49,6 +57,7 @@ textarea {
 input[type=text] {
   background-color: #B8B3A8;
   text-align: right;
+  color:#4D4D4D;
   border-radius: 0.625em;
   grid-column-end: span 5;
   grid-row-end: span 1;
@@ -76,13 +85,15 @@ input[value="Eliminar últ. valor"]
     grid-column-end: span 3;
 }
 
-section[value="firstRow"]
+div
 {
     grid-column-end: span 5;
     display: grid;
     grid-template-columns: repeat(5, 3em);
     gap: 1em;
 }
+
+
 
 
 
@@ -102,4 +113,5 @@ input[value=","] {
 
   font-size: 1.2em;
   background-color: #ffffff;
+  color:black;
 }

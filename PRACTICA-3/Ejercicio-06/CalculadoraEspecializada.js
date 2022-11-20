@@ -1,4 +1,5 @@
 "use strict";
+
 class CalculadoraRPN {
 
     constructor() {
@@ -7,7 +8,6 @@ class CalculadoraRPN {
         this.valorActual=1;
         this.shiftClicked=false;
         this.altPressed=false;
-        this.baseActual=10;
 
          document.addEventListener('keydown', (event) => {
             const key = event.key;
@@ -100,42 +100,29 @@ class CalculadoraRPN {
     }
 
     suma(){
-        var base=this.baseActual;
         if(this.pila.length >= 2){
-            this.toBase10();
             this.pila.push(this.pila.pop()+this.pila.pop());
-            this.toBase(base);
             this.showPila();
         }
-       
     }
 
     resta(){
-        var base=this.baseActual;
         if(this.pila.length >= 2){
-            this.toBase10();
             this.pila.push(this.pila.pop()-this.pila.pop());
-            this.toBase(base);
             this.showPila();
         }
     }
 
     multiplicación() {
-        var base=this.baseActual;
         if(this.pila.length >= 2){
-            this.toBase10();
             this.pila.push(this.pila.pop()*this.pila.pop());
-            this.toBase(base);
             this.showPila();
         }
     }
 
     división() {
-        var base=this.baseActual;
         if(this.pila.length >= 2){
-            this.toBase10();
             this.pila.push(this.pila.pop()/this.pila.pop());
-            this.toBase(base);
             this.showPila();
         }
     }
@@ -185,6 +172,112 @@ class CalculadoraRPN {
     }
 
     seno() {
+        if(this.pila.length>=1){
+            var numero=this.pila.pop();
+            if(!this.shiftClicked){
+                var resul=Math.sin(numero)
+                this.pila.push(resul);
+            } else{
+                var resul=Math.asin(numero)
+                this.pila.push(resul);
+            }
+        }
+        this.showPila();
+    }
+
+    coseno() {
+        if(this.pila.length>=1){
+            var numero=this.pila.pop();
+            if(!this.shiftClicked){
+                var resul=Math.cos(numero)
+                this.pila.push(resul);
+            } else{
+                var resul=Math.acos(numero)
+                this.pila.push(resul);
+            }
+        }
+        this.showPila();
+    }
+
+    tangente() {
+        if(this.pila.length>=1){
+            var numero=this.pila.pop();
+            if(!this.shiftClicked){
+                var resul=Math.tan(numero)
+                this.pila.push(resul);
+            } else{
+                var resul=Math.atan(numero)
+                this.pila.push(resul);
+            }
+        }
+        this.showPila();
+    }
+
+}
+class CalculadoraEspecializadaRPN extends CalculadoraRPN{
+
+    constructor() {
+        super();
+        this.baseActual=10;
+
+         document.addEventListener('keydown', (event) => {
+            const key = event.key;
+            if (key === 'b') {
+                this.toBase(2);
+            }else if(key==='q'){
+                this.toBase(8);
+            }else if(key==='d'){
+                this.toBase(10);
+            }else if(key==='h'){
+                this.toBase(16);
+            }
+            
+        })
+    } 
+
+    //REDEFINIDOS
+    suma(){
+        var base=this.baseActual;
+        if(this.pila.length >= 2){
+            this.toBase10();
+            this.pila.push(this.pila.pop()+this.pila.pop());
+            this.toBase(base);
+            this.showPila();
+        }
+       
+    }
+
+    resta(){
+        var base=this.baseActual;
+        if(this.pila.length >= 2){
+            this.toBase10();
+            this.pila.push(this.pila.pop()-this.pila.pop());
+            this.toBase(base);
+            this.showPila();
+        }
+    }
+
+    multiplicación() {
+        var base=this.baseActual;
+        if(this.pila.length >= 2){
+            this.toBase10();
+            this.pila.push(this.pila.pop()*this.pila.pop());
+            this.toBase(base);
+            this.showPila();
+        }
+    }
+
+    división() {
+        var base=this.baseActual;
+        if(this.pila.length >= 2){
+            this.toBase10();
+            this.pila.push(this.pila.pop()/this.pila.pop());
+            this.toBase(base);
+            this.showPila();
+        }
+    }
+
+    seno() {
         var base=this.baseActual;
         if(this.pila.length>=1){
             this.toBase10();
@@ -201,17 +294,7 @@ class CalculadoraRPN {
         this.showPila();
     }
 
-    toBase(x){
-        if(x==2){
-            this.toBase2();
-        } else if(x==8){
-            this.toBase8();
-        } else if(x==10){
-            this.toBase10();
-        } else if(x==16){
-            this.toBase16();
-        }
-    }
+
 
     coseno() {
         var base=this.baseActual;
@@ -247,6 +330,20 @@ class CalculadoraRPN {
         this.showPila();
     }
 
+    //NUEVOS METODOS
+
+    toBase(x){
+        if(x==2){
+            this.toBase2();
+        } else if(x==8){
+            this.toBase8();
+        } else if(x==10){
+            this.toBase10();
+        } else if(x==16){
+            this.toBase16();
+        }
+    }
+
     toBase10(){
         if(this.pila.length>=1){        
             if(this.pila.length>=1){
@@ -254,7 +351,6 @@ class CalculadoraRPN {
                     let num=this.pila[i]
                     var res=parseInt(num, this.baseActual)
                     if(isNaN(res)){
-                        alert("ADVERTENCIA: El número '"+num+"' no está en la base correcta, será tratado como decimal")
                         res=num;
                     }
                     this.pila[i]=res;
@@ -278,7 +374,6 @@ class CalculadoraRPN {
                     num=num.toString(2);
                     var res=parseInt(num);
                     if(isNaN(res)){
-                        alert("ADVERTENCIA: El número '"+num+"' no está en la base correcta, será tratado como decimal")
                         res=num;
                     }
                     this.pila[i]=res;
@@ -301,7 +396,6 @@ class CalculadoraRPN {
                     num=num.toString(8);
                     var res=parseInt(num);
                     if(isNaN(res)){
-                        alert("ADVERTENCIA: El número '"+num+"' no está en la base correcta, será tratado como decimal")
                         res=num;
                     }
                     this.pila[i]=res;
@@ -339,28 +433,28 @@ class CalculadoraRPN {
 
     changeBaseTo(base){
         this.baseActual=base;
-        document.getElementById("Base "+base).style.backgroundColor='#53AAFC';
+        document.getElementById("Base"+base).style.backgroundColor='#53AAFC';
         if(base==2){
-            document.getElementById("Base 10").style.backgroundColor='#A9D0F5';
-            document.getElementById("Base 8").style.backgroundColor='#A9D0F5';
-            document.getElementById("Base 16").style.backgroundColor='#A9D0F5';
+            document.getElementById("Base10").style.backgroundColor='#A9D0F5';
+            document.getElementById("Base8").style.backgroundColor='#A9D0F5';
+            document.getElementById("Base16").style.backgroundColor='#A9D0F5';
         } else if(base==10){
-            document.getElementById("Base 2").style.backgroundColor='#A9D0F5';
-            document.getElementById("Base 8").style.backgroundColor='#A9D0F5';
-            document.getElementById("Base 16").style.backgroundColor='#A9D0F5';
+            document.getElementById("Base2").style.backgroundColor='#A9D0F5';
+            document.getElementById("Base8").style.backgroundColor='#A9D0F5';
+            document.getElementById("Base16").style.backgroundColor='#A9D0F5';
         } else if(base==8){
-            document.getElementById("Base 2").style.backgroundColor='#A9D0F5';
-            document.getElementById("Base 10").style.backgroundColor='#A9D0F5';
-            document.getElementById("Base 16").style.backgroundColor='#A9D0F5';
+            document.getElementById("Base2").style.backgroundColor='#A9D0F5';
+            document.getElementById("Base10").style.backgroundColor='#A9D0F5';
+            document.getElementById("Base16").style.backgroundColor='#A9D0F5';
         } else if(base==16){
-            document.getElementById("Base 2").style.backgroundColor='#A9D0F5';
-            document.getElementById("Base 10").style.backgroundColor='#A9D0F5';
-            document.getElementById("Base 8").style.backgroundColor='#A9D0F5';
+            document.getElementById("Base2").style.backgroundColor='#A9D0F5';
+            document.getElementById("Base10").style.backgroundColor='#A9D0F5';
+            document.getElementById("Base8").style.backgroundColor='#A9D0F5';
 
         }
     }
 
 }
 
-var calc = new CalculadoraRPN();
+var calc = new CalculadoraEspecializadaRPN();
 

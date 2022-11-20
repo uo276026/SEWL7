@@ -13,13 +13,13 @@
     <meta name ="viewport" content ="width=device-width, initial-scale=1.0" />
     <!-- añadir el elemento link de enlace a la hoja de estilo dentro del <head> del documento html -->
     <link rel="stylesheet" type="text/css" href="CalculadoraMilan.css" />
-    <script src="CalculadoraMilan.js" type="text/javascript"></script>
+    <script src="CalculadoraMilan.js"></script>
 </head>
 
 <body>
     <h1>Calculadora Básica</h1>
     <form>
-        
+        <label for="resultado">nata by Milan</label>
         <input type="text" id="resultado" disabled readonly>
         <input type="button" value="C" onclick="calc.borrar();"/>
         <input type="button" value="CE" onclick="calc.borrarDigito();"/>

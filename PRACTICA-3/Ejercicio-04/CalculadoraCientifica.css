@@ -7,6 +7,7 @@ Descripción de los estilos
 
 h1{
     color:#123944; 
+    background-color: white;
     font-family: Arial, sans-serif;
 }
 
@@ -15,6 +16,15 @@ p{
   
 }
 
+
+label {
+  grid-column-end: span 5;
+  font-size:1.5em;
+  background-color: #E3E2E2;
+  color: black;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+}
 
 
 form {
@@ -25,11 +35,11 @@ form {
   margin: auto;
   display: grid;
   grid-template-columns: repeat(5, 5em);
-  grid-template-rows: repeat(11, 3em);
+  grid-template-rows: repeat(12, 3em);
   gap: 1em;
 }
 
-section[value="firstRow"]
+div
 {
     grid-column-end: span 5;
     display: grid;
@@ -45,6 +55,7 @@ input{
 
 input[type=text] {
   background-color: #E3E2E2;
+  color:#4D4D4D;
   text-align: right;
   grid-column-end: span 5;
   grid-row-end: span 2;
@@ -56,6 +67,7 @@ input[type=text] {
 
 input[type=button]{
   background-color: #EFEFEF;
+  color:black;
 }
 
 input[value="MC"], 
@@ -69,6 +81,7 @@ input[value="GRAD"],
 input[value="HYP"],
 input[value="F-E"] {
   font-weight: bold;
+  color:#4D4D4D;
   background-color: #E3E2E2;
 }
 
@@ -86,6 +99,7 @@ input[value="9"],
 input[value=","] {
   font-weight: bold;
   font-size: 1.2em;
+  color:#4D4D4D;
   background-color: #ffffff;
 }
 

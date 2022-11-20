@@ -5,15 +5,18 @@ Descripción de los estilos
 
 body{
   background-color:#FFEDD7;
+  color:#E6203B; 
 }
 
 h1{
     color:#E6203B; 
+    background-color:#FFEDD7;
     font-family: Arial, sans-serif;
 }
 
 h2, h3, h4{
     color:#E6405D; 
+    background-color:#FFEDD7;
     font-family: Arial, sans-serif;
 }
 

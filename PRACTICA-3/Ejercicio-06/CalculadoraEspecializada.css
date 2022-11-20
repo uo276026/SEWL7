@@ -7,6 +7,7 @@ Descripción de los estilos
 
 h1{
     color:#123944; 
+    background-color: white;
     font-family: Arial, sans-serif;
 }
 
@@ -15,7 +16,12 @@ p{
   
 }
 
-
+label {
+  grid-column-end: span 7;
+  font-size:1.5em;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+}
 
 form {
   color: white;
@@ -26,7 +32,7 @@ form {
   margin: auto;
   display: grid;
   grid-template-columns: repeat(7, 3em);
-  grid-template-rows: repeat(11, 3em);
+  grid-template-rows: repeat(13, 3em);
   gap: 1em;
 }
 
@@ -38,6 +44,7 @@ textarea {
   background-color: #B8B3A8;
   text-align: left;
   border-radius: 0.625em;
+  color:#4D4D4D;
   grid-column-end: span 7;
   grid-row-end: span 4;
   font-size:1.5em;
@@ -51,6 +58,7 @@ input[type=text] {
   text-align: right;
   border-radius: 0.625em;
   grid-column-end: span 7;
+  color:#4D4D4D;
   grid-row-end: span 1;
   font-size:1.5em;
   
@@ -73,6 +81,7 @@ input[value="sin-1"],input[value="cos-1"],input[value="tan-1"]
 input[value="Base 2"],
 input[value="Base 8"],input[value="Base 16"]
 {
+    color:black;
     grid-column-end: span 2;
     background-color: #A9D0F5;
 }
@@ -80,6 +89,7 @@ input[value="Base 8"],input[value="Base 16"]
 input[value="Base 10"]
 {
     grid-column-end: span 2;
+    color:black;
     background-color: #53AAFC;
 }
 
@@ -108,7 +118,7 @@ input[value="8"],
 input[value="9"],
 input[value=","] {
   font-weight: bold;
-
+  color:black;
   font-size: 1.2em;
   background-color: #ffffff;
 }

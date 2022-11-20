@@ -4,9 +4,10 @@ Descripción de los estilos
 **********************/
 
 
-
+ 
 h1{
     color:#123944; 
+    background-color: white;
     font-family: Arial, sans-serif;
 }
 
@@ -15,7 +16,11 @@ p{
   
 }
 
-
+label {
+  grid-column-end: span 5;
+  font-size:1.5em;
+  font-family: Arial, sans-serif;
+}
 
 form {
   color: white;
@@ -26,7 +31,7 @@ form {
   margin: auto;
   display: grid;
   grid-template-columns: repeat(5, 3em);
-  grid-template-rows: repeat(7, 3em);
+  grid-template-rows: repeat(8, 3em);
   gap: 1em;
 }
 
@@ -36,6 +41,7 @@ input{
 
 input[type=text] {
   background-color: #B8B3A8;
+  color:#4D4D4D;
   text-align: right;
   border-radius: 0.625em;
   grid-column-end: span 5;

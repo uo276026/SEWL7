@@ -173,7 +173,6 @@ class Calculadora {
         this.pantalla += "/100";
         this.show();
     }
-
     raíz() {
         this.limpiaPantalla();
         this.igual();
@@ -184,7 +183,7 @@ class Calculadora {
         } else if (this.pantalla != "") {
             try {
                 var resultado = Math.sqrt(eval(this.pantalla));
-                this.pantalla(Number(resultado))
+                this.pantalla=resultado;
                 this.show();
             } catch (err) {
                 this.pantalla = "ERROR";

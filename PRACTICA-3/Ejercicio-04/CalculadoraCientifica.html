@@ -13,22 +13,20 @@
     <meta name ="viewport" content ="width=device-width, initial-scale=1.0" />
     <!-- añadir el elemento link de enlace a la hoja de estilo dentro del <head> del documento html -->
     <link rel="stylesheet" type="text/css" href="CalculadoraCientifica.css" />
-    <script src="CalculadoraCientifica.js" type="text/javascript"></script>
+    <script src="CalculadoraCientifica.js"></script>
 </head>
 
 <body>
     <h1>Calculadora Científica</h1>
     <form>
-        
-    
-
+        <label for="resultado"> Científica</label>
         <input type="text" id="resultado" disabled readonly>
 
-        <section value="firstRow">
+        <div>
             <input type="button" id="medidas" value="DEG" onclick="calc.cambiarMedidaAngulo();" />
             <input type="button" id="hyp" value="HYP" onclick="calc.hyp();"/>
             <input type="button" value="F-E" onclick="calc.fe();"/>
-        </section>
+        </div>
         
         <input type="button" value="MC" onclick="calc.mc();"/>
         <input type="button" value="MR" onclick="calc.mr();"/>

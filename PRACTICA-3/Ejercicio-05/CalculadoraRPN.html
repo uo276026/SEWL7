@@ -13,21 +13,22 @@
     <meta name ="viewport" content ="width=device-width, initial-scale=1.0" />
     <!-- añadir el elemento link de enlace a la hoja de estilo dentro del <head> del documento html -->
     <link rel="stylesheet" type="text/css" href="CalculadoraRPN.css" />
-    <script src="CalculadoraRPN.js" type="text/javascript"></script>
+    <script src="CalculadoraRPN.js"></script>
 </head>
 
 <body>
     <h1>Calculadora RPN</h1>
     <form>
-        
+        <label for="pila"> RPN </label>
         <textarea rows="7"  name="pila" id="pila" disabled readonly> </textarea>
+        <label for="resultado"> Número:</label>
         <input type="text" id="resultado" disabled readonly/>
-        <section value="firstRow">
+        <div>
             <input type="button" id="seno" value="sin" onclick="calc.seno();"/>
             <input type="button" id="coseno" value="cos" onclick="calc.coseno();"/>
             <input type="button" id="tangente" value="tan" onclick="calc.tangente();"/>
             <input type="button" id="shift" value="↑" onclick="calc.shift();"/>
-        </section>
+        </div>
 
         <input type="button" value="7" onclick="calc.dígitos(7);"/>
         <input type="button" value="8" onclick="calc.dígitos(8);"/>
