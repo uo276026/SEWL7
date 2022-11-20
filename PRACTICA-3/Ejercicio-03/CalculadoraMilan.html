@@ -1,0 +1,51 @@
+<!DOCTYPE HTML>
+
+<html lang="es">
+<head>
+    <!-- Datos que describen el documento, CODIFICACION DE CARACTERES -->
+    <meta charset="UTF-8" />
+    <title>Calculadora Básica</title>
+    <!--Metadatos de los documentos HTML5-->
+    <meta name ="author" content ="Lara Fernández Méndez" />
+    <meta name ="description" content ="Una calculadora con funciones básicas" />
+    <meta name ="keywords" content ="calculadora, calculos" />
+    <!--Definición de la ventana gráfica-->
+    <meta name ="viewport" content ="width=device-width, initial-scale=1.0" />
+    <!-- añadir el elemento link de enlace a la hoja de estilo dentro del <head> del documento html -->
+    <link rel="stylesheet" type="text/css" href="CalculadoraMilan.css" />
+    <script src="CalculadoraMilan.js" type="text/javascript"></script>
+</head>
+
+<body>
+    <h1>Calculadora Básica</h1>
+    <form>
+        
+        <input type="text" id="resultado" disabled readonly>
+        <input type="button" value="C" onclick="calc.borrar();"/>
+        <input type="button" value="CE" onclick="calc.borrarDigito();"/>
+        <input type="button" value="+/-" onclick="calc.cambioSigno();"/>
+        <input type="button" value="√" onclick="calc.raíz();"/>
+        <input type="button" value="%" onclick="calc.porcentaje();"/>
+        <input type="button" value="7" onclick="calc.dígitos(7);"/>
+        <input type="button" value="8" onclick="calc.dígitos(8);"/>
+        <input type="button" value="9" onclick="calc.dígitos(9);"/>
+        <input type="button" value="x" onclick="calc.multiplicación();"/>
+        <input type="button" value="÷" onclick="calc.división();"/>
+        <input type="button" value="4" onclick="calc.dígitos(4);"/>
+        <input type="button" value="5" onclick="calc.dígitos(5);"/>
+        <input type="button" value="6" onclick="calc.dígitos(6);"/>
+        <input type="button" value="-" onclick="calc.resta();"/>
+        <input type="button" value="Mrc" onclick="calc.mrc();"/>
+        <input type="button" value="1" onclick="calc.dígitos(1);"/>
+        <input type="button" value="2" onclick="calc.dígitos(2);"/>
+        <input type="button" value="3" onclick="calc.dígitos(3);"/>
+        <input type="button" value="+" onclick="calc.suma();"/>
+        <input type="button" value="M-" onclick="calc.mMenos();"/>
+        <input type="button" value="0" onclick="calc.dígitos(0);"/>
+        <input type="button" value="." onclick="calc.punto();"/>
+        <input type="button" value="=" onclick="calc.igual();"/>
+        <input type="button" value="M+" onclick="calc.mMas();"/>
+    </form>
+</body>
+
+</html>

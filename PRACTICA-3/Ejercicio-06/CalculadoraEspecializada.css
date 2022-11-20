@@ -1,0 +1,114 @@
+/*********************
+Lara Fernández - UO276026
+Descripción de los estilos
+**********************/
+
+
+
+h1{
+    color:#123944; 
+    font-family: Arial, sans-serif;
+}
+
+p{
+  text-align:justify;
+  
+}
+
+
+
+form {
+  color: white;
+  background-color: #9CC387;
+  width: max-content;
+  border-radius: 0.625em;
+  padding: 1.2em;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(7, 3em);
+  grid-template-rows: repeat(11, 3em);
+  gap: 1em;
+}
+
+input{
+  font-size: 1em;
+}
+
+textarea {
+  background-color: #B8B3A8;
+  text-align: left;
+  border-radius: 0.625em;
+  grid-column-end: span 7;
+  grid-row-end: span 4;
+  font-size:1.5em;
+  resize: none;
+  
+}
+
+
+input[type=text] {
+  background-color: #B8B3A8;
+  text-align: right;
+  border-radius: 0.625em;
+  grid-column-end: span 7;
+  grid-row-end: span 1;
+  font-size:1.5em;
+  
+}
+
+input[type=button] {
+  font-weight: bold;
+    border:none;
+}
+
+input[value="ENTER"],input[value="sin"],input[value="cos"],input[value="tan"],
+input[value="sin-1"],input[value="cos-1"],input[value="tan-1"]
+{
+    grid-column-end: span 2;
+}
+
+
+
+
+input[value="Base 2"],
+input[value="Base 8"],input[value="Base 16"]
+{
+    grid-column-end: span 2;
+    background-color: #A9D0F5;
+}
+
+input[value="Base 10"]
+{
+    grid-column-end: span 2;
+    background-color: #53AAFC;
+}
+
+
+input[value="Vaciar"]
+{
+    grid-column-end: span 2;
+}
+
+input[value="Eliminar últ. valor"]
+{
+    grid-column-end: span 3;
+}
+
+
+
+input[value="0"], 
+input[value="1"], 
+input[value="2"],
+input[value="3"],
+input[value="4"],
+input[value="5"],
+input[value="6"],
+input[value="7"],
+input[value="8"],
+input[value="9"],
+input[value=","] {
+  font-weight: bold;
+
+  font-size: 1.2em;
+  background-color: #ffffff;
+}

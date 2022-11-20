@@ -1,0 +1,78 @@
+<!DOCTYPE HTML>
+
+<html lang="es">
+<head>
+    <!-- Datos que describen el documento, CODIFICACION DE CARACTERES -->
+    <meta charset="UTF-8" />
+    <title>Calculadora Científica</title>
+    <!--Metadatos de los documentos HTML5-->
+    <meta name ="author" content ="Lara Fernández Méndez" />
+    <meta name ="description" content ="Una calculadora con funciones científicas" />
+    <meta name ="keywords" content ="calculadora, ciencias, matematicas, calculo" />
+    <!--Definición de la ventana gráfica-->
+    <meta name ="viewport" content ="width=device-width, initial-scale=1.0" />
+    <!-- añadir el elemento link de enlace a la hoja de estilo dentro del <head> del documento html -->
+    <link rel="stylesheet" type="text/css" href="CalculadoraCientifica.css" />
+    <script src="CalculadoraCientifica.js" type="text/javascript"></script>
+</head>
+
+<body>
+    <h1>Calculadora Científica</h1>
+    <form>
+        
+    
+
+        <input type="text" id="resultado" disabled readonly>
+
+        <section value="firstRow">
+            <input type="button" id="medidas" value="DEG" onclick="calc.cambiarMedidaAngulo();" />
+            <input type="button" id="hyp" value="HYP" onclick="calc.hyp();"/>
+            <input type="button" value="F-E" onclick="calc.fe();"/>
+        </section>
+        
+        <input type="button" value="MC" onclick="calc.mc();"/>
+        <input type="button" value="MR" onclick="calc.mr();"/>
+        <input type="button" value="M-" onclick="calc.mMenos();"/>
+        <input type="button" value="M+" onclick="calc.mMas();"/>
+        <input type="button" value="MS" onclick="calc.ms();"/>
+
+        <input type="button" id="potencia" value="x^2" onclick="calc.elevar2y3();"/>
+        <input type="button" id="potencia/raiz" value="x^y" onclick="calc.elevaryPotenciaY();"/>
+        <input type="button" id="seno" value="sin" onclick="calc.seno();"/>
+        <input type="button" id="coseno" value="cos" onclick="calc.coseno();"/>
+        <input type="button" id="tangente" value="tan" onclick="calc.tangente();"/>
+        <input type="button" id="raiz/x" value="√" onclick="calc.raíz();"/>
+        <input type="button" id="10xex" value="10^x" onclick="calc.base10ex();"/>
+        <input type="button" id="log/ln" value="log" onclick="calc.logaritmo();"/>
+        <input type="button" id="exp/dms" value="Exp" onclick="calc.expdms();"/>
+        <input type="button" id="mod/deg" value="Mod" onclick="calc.moddeg();"/>
+        <input type="button" id="shift" value="↑" onclick="calc.shift();"/>
+        <input type="button" value="CE" onclick="calc.ce();"/>
+        <input type="button" value="C" onclick="calc.borrar();"/>
+        <input type="button" value="⌫" onclick="calc.borrarDigito();"/>
+        <input type="button" value="÷" onclick="calc.división();"/>
+        <input type="button" value="π" onclick="calc.pi();"/>
+        <input type="button" value="7" onclick="calc.dígitos(7);"/>
+        <input type="button" value="8" onclick="calc.dígitos(8);"/>
+        <input type="button" value="9" onclick="calc.dígitos(9);"/>
+        <input type="button" value="x" onclick="calc.multiplicación();"/>
+        <input type="button" value="n!" onclick="calc.exponente();"/>
+        <input type="button" value="4" onclick="calc.dígitos(4);"/>
+        <input type="button" value="5" onclick="calc.dígitos(5);"/>
+        <input type="button" value="6" onclick="calc.dígitos(6);"/>
+        <input type="button" value="-" onclick="calc.resta();"/>
+        <input type="button" value="±" onclick="calc.cambioSigno();"/>
+        <input type="button" value="1" onclick="calc.dígitos(1);"/>
+        <input type="button" value="2" onclick="calc.dígitos(2);"/>
+        <input type="button" value="3" onclick="calc.dígitos(3);"/>
+        <input type="button" value="+" onclick="calc.suma();"/>
+        <input type="button" value="(" onclick="calc.abrirParentesis();"/>
+        <input type="button" value=")" onclick="calc.cerrarParentesis();"/>
+        <input type="button" value="0" onclick="calc.dígitos(0);"/>
+        <input type="button" value="," onclick="calc.punto();"/>
+        <input type="button" value="=" onclick="calc.igual();"/>
+ 
+    </form>
+</body>
+
+</html>

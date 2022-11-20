@@ -1,0 +1,60 @@
+<!DOCTYPE HTML>
+
+<html lang="es">
+<head>
+    <!-- Datos que describen el documento, CODIFICACION DE CARACTERES -->
+    <meta charset="UTF-8" />
+    <title>Calculadora RPN Especializada</title>
+    <!--Metadatos de los documentos HTML5-->
+    <meta name ="author" content ="Lara Fernández Méndez" />
+    <meta name ="description" content ="Una calculadora RPN Calculadora Especializada" />
+    <meta name ="keywords" content ="calculadora, calculos, RPN, especializada, notación postfija, notación polaca inversa, cambio de base" />
+    <!--Definición de la ventana gráfica-->
+    <meta name ="viewport" content ="width=device-width, initial-scale=1.0" />
+    <!-- añadir el elemento link de enlace a la hoja de estilo dentro del <head> del documento html -->
+    <link rel="stylesheet" type="text/css" href="CalculadoraEspecializada.css" />
+    <script src="CalculadoraEspecializada.js" type="text/javascript"></script>
+</head>
+
+<body>
+    <h1>Calculadora RPN Especializada</h1>
+    <form>
+        
+        <textarea rows="7"  name="pila" id="pila" disabled readonly> </textarea>
+        <input type="text" id="resultado" disabled readonly/>
+   
+            <input type="button" id="seno" value="sin" onclick="calc.seno();"/>
+            <input type="button" id="coseno" value="cos" onclick="calc.coseno();"/>
+            <input type="button" id="tangente" value="tan" onclick="calc.tangente();"/>
+            <input type="button" id="shift" value="↑" onclick="calc.shift();"/>
+     
+
+        <input type="button" value="7" onclick="calc.dígitos(7);"/>
+        <input type="button" value="8" onclick="calc.dígitos(8);"/>
+        <input type="button" value="9" onclick="calc.dígitos(9);"/>
+        <input type="button" value="." onclick="calc.punto();"/>
+        <input type="button" value="+/-" onclick="calc.cambioSigno();"/>
+        <input type="button" id="Base 2" value="Base 2" onclick="calc.toBase(2);"/>
+        <input type="button" value="4" onclick="calc.dígitos(4);"/>
+        <input type="button" value="5" onclick="calc.dígitos(5);"/>
+        <input type="button" value="6" onclick="calc.dígitos(6);"/>
+        <input type="button" value="x" onclick="calc.multiplicación();"/>
+        <input type="button" value="/" onclick="calc.división();"/>
+        <input type="button" id="Base 8" value="Base 8" onclick="calc.toBase(8);"/>
+        <input type="button" value="1" onclick="calc.dígitos(1);"/>
+        <input type="button" value="2" onclick="calc.dígitos(2);"/>
+        <input type="button" value="3" onclick="calc.dígitos(3);"/>
+        <input type="button" value="+" onclick="calc.suma();"/>
+        <input type="button" value="-" onclick="calc.resta();"/>
+        <input type="button" id="Base 10" value="Base 10" onclick="calc.toBase(10);"/>
+        <input type="button" value="0" onclick="calc.dígitos(0);"/>
+        <input type="button" value="ENTER" onclick="calc.apilar();"/>
+        <input type="button" value="C" onclick="calc.borrar();"/>
+        <input type="button" value="CE" onclick="calc.borrarDigito();"/>
+        <input type="button" id="Base 16" value="Base 16" onclick="calc.toBase(16);"/>
+        <input type="button" value="Vaciar" onclick="calc.limpiarPila();"/>       
+        <input type="button" value="Eliminar últ. valor" onclick="calc.desapilar();"/> 
+    </form>
+</body>
+
+</html>
