@@ -1,0 +1,131 @@
+<!DOCTYPE HTML>
+
+<html lang="es">
+<head>
+    <!-- Datos que describen el documento, CODIFICACION DE CARACTERES -->
+    <meta charset="UTF-8" />
+    <title> Ejercicio 7 </title>
+    <!--Metadatos de los documentos HTML5-->
+    <meta name ="author" content ="Lara Fernández Méndez" />
+    <meta name ="description" content ="Tabla de Versiones de Ruby" />
+    <meta name ="keywords" content ="Ruby, versiones, opinion" />
+    <!--Definición de la ventana gráfica-->
+    <meta name ="viewport" content ="width=device-width, initial-scale=1.0" />
+    <!-- añadir el elemento link de enlace a la hoja de estilo dentro del <head> del documento html -->
+    <link rel="stylesheet" type="text/css" href="Ejercicio7.css" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="Ejercicio7.js"></script>
+</head>
+
+<body>
+<header> <h1>Lenguaje Ruby</h1></header>
+
+<main>
+    <!-- Datos con el contenidos que aparece en el navegador -->
+  <section>
+      <h2>Introducción</h2>
+      <p>Ruby es un lenguaje de programación interpretado, reflexivo y orientado a objetos, creado por el programador japonés Yukihiro Matsumoto. </p>
+      <img src="multimedia/ruby.jpg" alt=" Ruby Logo" />
+    <button name="ocultar" >Ocultar párrafos</button>
+    <button name="mostrar" >Mostrar párrafos</button>
+    <button name="MasInfo" >Más Información</button>
+    <button name="MenosInfo" >Menos Información</button>
+  </section>
+
+  <section>
+    <h3>Opinión personal:</h3>
+    <p>Su opinión:</p> 
+    <input type="text" name="opinion" value=" ">
+    <button name="añadirOpinion" >Añadir</button>
+  </section>
+  
+  <section>
+    <h3>Tabla de versiones:</h3>
+    <button name="ocultarVersiones" >Ocultar filas con elementos vacios</button>
+    <button name="mostrarVersiones" >Mostrar filas con elementos vacios</button>
+    <table>
+      <thead>
+        <tr>
+          <th> Versión </th>
+          <th> Año de Publicación </th>
+          <th> Año de Fin de la Fase de Soporte </th>
+        </tr>
+        <tbody>
+          <tr>
+            <td > 1.0 </td>
+            <td > 1996 </td>
+            <td >&nbsp;</td>
+          </tr>
+          <tr>
+            <td > 1.8 </td>
+            <td > 2003 </td>
+            <td > 	2014 </td>
+          </tr>
+          <tr>
+            <td > 1.9 </td>
+            <td > 2007 </td>
+            <td > 2015 </td>
+          </tr>
+          <tr>
+            <td > 2.0 </td>
+            <td > 2013 </td>
+            <td > 	2016 </td>
+          </tr>
+          <tr>
+            <td > 2.1 </td>
+            <td > 2013 </td>
+            <td > 2017 </td>
+          </tr>
+          <tr>
+            <td > 2.2 </td>
+            <td > 2014 </td>
+            <td > 2018 </td>
+          </tr>
+          <tr>
+            <td > 2.3 </td>
+            <td > 2015 </td>
+            <td > 2019 </td>
+          </tr>
+          <tr>
+            <td > 2.4 </td>
+            <td > 2016 </td>
+            <td > 2020 </td>
+          </tr>
+          <tr>
+            <td > 2.5 </td>
+            <td > 2017 </td>
+            <td > 2021 </td>
+          </tr>
+          <tr>
+            <td > 2.6 </td>
+            <td > 2018</td>
+            <td > 2022</td>
+          </tr>
+          <tr>
+            <td > 2.7 </td>
+            <td >&nbsp;</td>
+            <td >&nbsp;</td>
+          </tr>
+          <tr>
+            <td > 3.0 </td>
+            <td >&nbsp;</td>
+            <td >&nbsp;</td>
+          </tr>
+          <tr>
+            <td > 3.1 </td>
+            <td >&nbsp;</td>
+            <td >&nbsp;</td>
+          </tr>
+    </table>
+    <button name="sumarFilas" >Sumar Filas y Columnas</button>
+    <p>SUMA:</p>
+  </section>
+  <section>
+    <h3>Ver información de elementos HTML</h3>
+    <p>Mostrar quien es el padre de cada elemento HTML y que tipo es:</p>
+    <button name="verInfoHTML" >Ver</button>
+  </section>
+
+</main>
+</body>
+</html>

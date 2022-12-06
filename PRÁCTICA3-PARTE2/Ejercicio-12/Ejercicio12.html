@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+
+<html lang="es">
+<head>
+    <!-- Datos que describen el documento, CODIFICACION DE CARACTERES -->
+    <meta charset="UTF-8" />
+    <title> Ej.12 - Carga Archivos </title>
+    <!--Metadatos de los documentos HTML5-->
+    <meta name ="author" content ="Lara Fernández Méndez" />
+    <meta name ="description" content ="Carga de archivos y visualización de sus propiedades" />
+    <meta name ="keywords" content ="archivos, tipos, propiedades" />
+    <!--Definición de la ventana gráfica-->
+    <meta name ="viewport" content ="width=device-width, initial-scale=1.0" />
+    <!-- añadir el elemento link de enlace a la hoja de estilo dentro del <head> del documento html -->
+    <link rel="stylesheet" type="text/css" href="Ejercicio12.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="Ejercicio12.js"></script>
+</head>
+
+<body>
+<header> <h1>PROPIEDADES ARCHIVOS</h1></header>
+
+<main>
+    <section>
+        <h2>Seleccione un archivo:</h2>
+        <p><input type="file" onchange="lector.leerArchivoTexto(this.files);"></p>
+    </section>
+
+  <section>
+    <h2>Datos</h2>
+  </section>
+  <section>
+    <h3>Contenido del archivo de texto:</h3>
+    <pre></pre>
+  </section>
+
+</main>
+</body>
+</html>

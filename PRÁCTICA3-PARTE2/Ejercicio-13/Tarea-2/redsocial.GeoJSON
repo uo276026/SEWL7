@@ -1,0 +1,76 @@
+{
+    "type": "FeatureCollection",
+    "name": "Ejercicio13",
+    "features": [
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-5.6611,43.5322,13]   
+            },
+            "properties":{
+                "name":"Gijon"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-8.13385,42.57505,6]   
+            },
+            "properties":{
+                "name":"Galicia"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-5.92466,43.55795,13]   
+            },
+            "properties":{
+                "name":"Avilés"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-5.84854,43.36225,13]   
+            },
+            "properties":{
+                "name":"Oviedo"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-3.82264,43.46363,10]   
+            },
+            "properties":{
+                "name":"Santander"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [2.16856,41.38739,6]   
+            },
+            "properties":{
+                "name":"Barcelona"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-5.69605,43.30811,13]   
+            },
+            "properties":{
+                "name":"Langreo"
+            }
+        }
+    ]
+}

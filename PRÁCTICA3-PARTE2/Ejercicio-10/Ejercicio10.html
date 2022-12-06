@@ -1,0 +1,59 @@
+<!DOCTYPE HTML>
+
+<html lang="es">
+<head>
+    <!-- Datos que describen el documento, CODIFICACION DE CARACTERES -->
+    <meta charset="UTF-8" />
+    <title> Ej.10 - Precios Electricidad </title>
+    <!--Metadatos de los documentos HTML5-->
+    <meta name ="author" content ="Lara Fernández Méndez" />
+    <meta name ="description" content ="Precio del mercado de la red eléctrica en España" />
+    <meta name ="keywords" content ="electricidad, precios" />
+    <!--Definición de la ventana gráfica-->
+    <meta name ="viewport" content ="width=device-width, initial-scale=1.0" />
+    <!-- añadir el elemento link de enlace a la hoja de estilo dentro del <head> del documento html -->
+    <link rel="stylesheet" type="text/css" href="Ejercicio10.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="Ejercicio10.js"></script>
+</head>
+
+<body>
+<header> <h1>RED ELÉCTRICA ESPAÑA</h1></header>
+
+<main>
+    <!-- Datos con el contenidos que aparece en el navegador -->
+  <section>
+    <form>
+        <p>
+        <label>Zona de España:</label>
+        <select name="zona">
+            <option value="8741">Península</option>
+            <option value="8742">Canarias</option>
+            <option value="8743">Baleares</option>
+            <option value="8">Castilla y León</option>
+            <option value="11">Principado de Asturias</option>
+            <option value="17">Galicia</option>
+        </select>
+        </p>
+        <p>
+            <label>Año:</label> 
+            <input name="year" type="number" min="2014" max="2022" step="1" value="2022"/>
+        </p>
+    </form>
+
+
+      <h2>Mercados: Precio Componentes</h2>
+      <button name="compPrecio" onclick="new TarifaLuz('componedsantes-precio').cargarDatos();" >Ver datos</button>
+      <h2>Mercados: Energia Precios Regulación Secundaria</h2>
+      <button name="energiaSecund" onclick="new TarifaLuz('energia-precios-regulacion-secundaria').cargarDatos();">Ver datos</button>
+      <h2>Mercados: Energia Precios Regulación Terciaria</h2>
+      <button name="energiaTerc" onclick="new TarifaLuz('energia-precios-regulacion-terciaria').cargarDatos();">Ver datos</button>
+  </section>
+
+  <section>
+    <h2>Datos</h2>
+</section>
+
+</main>
+</body>
+</html>

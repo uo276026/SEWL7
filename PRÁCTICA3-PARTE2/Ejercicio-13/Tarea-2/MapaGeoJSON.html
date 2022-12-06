@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+
+<html lang="es">
+<head>
+    <!-- Datos que describen el documento, CODIFICACION DE CARACTERES -->
+    <meta charset="UTF-8" />
+    <title> Ej.14 - Mapa GeoJSON </title>
+    <!--Metadatos de los documentos HTML5-->
+    <meta name ="author" content ="Lara Fernández Méndez" />
+    <meta name ="description" content ="Creación de mapa a partir de un archivo KML" />
+    <meta name ="keywords" content ="mapa, kml, coordenadas, localizaciones" />
+    <!--Definición de la ventana gráfica-->
+    <meta name ="viewport" content ="width=device-width, initial-scale=1.0" />
+    <!-- añadir el elemento link de enlace a la hoja de estilo dentro del <head> del documento html -->
+    <link rel="stylesheet" type="text/css" href="MapaGeoJSON.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="MapaGeoJSON.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC6j4mF6blrc4kZ54S6vYZ2_FpMY9VzyRU&callback=mapakml.initMap"></script>
+</head>
+
+<body>
+<header> <h1>MAPA GeoJSON</h1></header>
+    <h2>Seleccione un archivo GeoJSON:</h2>
+    <p><input type="file" id="archivoTexto" onchange="mapakml.leerArchivo(this.files);"></p>
+    <h2>Mapa</h2>
+    <main id="mapa"></main>
+</body>
+</html>

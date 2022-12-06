@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+
+<html lang="es">
+<head>
+    <!-- Datos que describen el documento, CODIFICACION DE CARACTERES -->
+    <meta charset="UTF-8" />
+    <title> Ej.8 - Metereología </title>
+    <!--Metadatos de los documentos HTML5-->
+    <meta name ="author" content ="Lara Fernández Méndez" />
+    <meta name ="description" content ="Datos metereologicos en diferentes partes de España el día actual" />
+    <meta name ="keywords" content ="metereología, tiempo, temperatura" />
+    <!--Definición de la ventana gráfica-->
+    <meta name ="viewport" content ="width=device-width, initial-scale=1.0" />
+    <!-- añadir el elemento link de enlace a la hoja de estilo dentro del <head> del documento html -->
+    <link rel="stylesheet" type="text/css" href="Ejercicio8.css" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="Ejercicio8.js"></script>
+</head>
+
+<body>
+<header> <h1>Metereología</h1></header>
+
+<main>
+    <!-- Datos con el contenidos que aparece en el navegador -->
+  <section>
+      <h2>Gijón</h2>
+      <button name="gijon" onclick="new Meteo('Gijón').verJSON();" >Ver datos meteorológicos</button>
+      <h2>Galicia</h2>
+      <button name="galicia" onclick="new Meteo('Galicia').verJSON();">Ver datos meteorológicos</button>
+      <h2>Avilés</h2>
+      <button name="aviles" onclick="new Meteo('Avilés').verJSON();">Ver datos meteorológicos</button>
+      <h2>Santander</h2>
+      <button name="santander" onclick="new Meteo('Santander').verJSON();">Ver datos meteorológicos</button>
+      <h2>Barcelona</h2>
+      <button name="barcelona" onclick="new Meteo('Barcelona').verJSON();">Ver datos meteorológicos</button>
+     
+  </section>
+
+  <section>
+    <h2>Datos Meteorológicos</h2>
+</section>
+
+</main>
+</body>
+</html>

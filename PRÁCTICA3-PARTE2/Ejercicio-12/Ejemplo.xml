@@ -1,0 +1,22 @@
+<current>
+    <city id="3121424" name="Gijón">
+        <coord lon="-5.6615" lat="43.5357"/>
+        <country>ES</country>
+        <timezone>3600</timezone>
+        <sun rise="2022-12-04T07:39:02" set="2022-12-04T16:46:55"/>
+    </city>
+    <temperature value="10.62" min="9.7" max="11.58" unit="celsius"/>
+    <feels_like value="9.59" unit="celsius"/>
+    <humidity value="71" unit="%"/>
+    <pressure value="1009" unit="hPa"/>
+    <wind>
+        <speed value="1.79" unit="m/s" name="Light breeze"/>
+        <gusts value="3.13"/>
+        <direction value="97" code="E" name="East"/>
+    </wind>
+    <clouds value="5" name="clear sky"/>
+    <visibility value="10000"/>
+    <precipitation mode="no"/>
+    <weather number="800" value="cielo claro" icon="01d"/>
+    <lastupdate value="2022-12-04T16:27:41"/>
+</current>
