@@ -81,9 +81,9 @@ input[value="Vaciar"]
     grid-column-end: span 2;
 }
 
-input[value="Eliminar últ. valor"]
+input[value="Eliminar últ."]
 {
-    grid-column-end: span 3;
+    grid-column-end: span 2;
 }
 
 div

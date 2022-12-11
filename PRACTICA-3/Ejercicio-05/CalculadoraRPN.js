@@ -74,6 +74,7 @@ class CalculadoraRPN {
         this.showPila();
     }
 
+   
     showPila(){
         var stringPila="";
         var pos=this.pila.length
@@ -81,11 +82,11 @@ class CalculadoraRPN {
             stringPila += "[" + pos + "]" +"\t\t" +this.pila[i]+"\n";
             pos--;
         }       
-        document.getElementById("pila").value = stringPila
+        document.getElementsByTagName("textarea")[0].value = stringPila
     }
 
     show() {
-        document.getElementById("resultado").value = this.pantalla
+        document.getElementsByTagName("input")[0].value = this.pantalla
     }
 
     dígitos(arg) {
@@ -104,6 +105,7 @@ class CalculadoraRPN {
             this.showPila();
         }
     }
+    
 
     resta(){
         if(this.pila.length >= 2){
@@ -126,6 +128,8 @@ class CalculadoraRPN {
         }
     }
 
+
+    
     borrar() {
         this.pantalla = "";
         this.show();
@@ -151,22 +155,22 @@ class CalculadoraRPN {
     shift(){
         this.shiftClicked=!this.shiftClicked;
         if(this.shiftClicked){
-            document.getElementById("shift").style.backgroundColor='#A5CFED';
+            document.getElementsByName("shift")[0].style.backgroundColor='#A5CFED';
         } else{
-            document.getElementById("shift").style.backgroundColor='#EFEFEF';
+            document.getElementsByName("shift")[0].style.backgroundColor='#EFEFEF';
         }
         this.changeLayout();
     }
 
     changeLayout(){
         if(this.shiftClicked){
-            document.getElementById("seno").value="sin-1";
-            document.getElementById("coseno").value="cos-1";
-            document.getElementById("tangente").value="tan-1";
+            document.getElementsByName("seno")[0].value="sin-1";
+            document.getElementsByName("coseno")[0].value="cos-1";
+            document.getElementsByName("tangente")[0].value="tan-1";
         } else if(!this.shiftClicked){
-            document.getElementById("seno").value="sin";
-            document.getElementById("coseno").value="cos";
-            document.getElementById("tangente").value="tan";
+            document.getElementsByName("seno")[0].value="sin";
+            document.getElementsByName("coseno")[0].value="cos";
+            document.getElementsByName("tangente")[0].value="tan";
         }
     }
 
@@ -208,6 +212,15 @@ class CalculadoraRPN {
                 var resul=Math.atan(numero)
                 this.pila.push(resul);
             }
+        }
+        this.showPila();
+    }
+
+    raiz(){
+        if(this.pila.length>=1){
+            var numero=this.pila.pop();
+            var resul=Math.sqrt(numero)
+            this.pila.push(resul);
         }
         this.showPila();
     }

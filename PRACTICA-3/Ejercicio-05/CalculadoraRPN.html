@@ -24,10 +24,10 @@
         <label for="resultado"> Número:</label>
         <input type="text" id="resultado" disabled readonly/>
         <div>
-            <input type="button" id="seno" value="sin" onclick="calc.seno();"/>
-            <input type="button" id="coseno" value="cos" onclick="calc.coseno();"/>
-            <input type="button" id="tangente" value="tan" onclick="calc.tangente();"/>
-            <input type="button" id="shift" value="↑" onclick="calc.shift();"/>
+            <input type="button" name="seno" value="sin" onclick="calc.seno();"/>
+            <input type="button" name="coseno" value="cos" onclick="calc.coseno();"/>
+            <input type="button" name="tangente" value="tan" onclick="calc.tangente();"/>
+            <input type="button" name="shift" value="↑" onclick="calc.shift();"/>
         </div>
 
         <input type="button" value="7" onclick="calc.dígitos(7);"/>
@@ -50,7 +50,8 @@
         <input type="button" value="C" onclick="calc.borrar();"/>
         <input type="button" value="CE" onclick="calc.borrarDigito();"/>
         <input type="button" value="Vaciar" onclick="calc.limpiarPila();"/>       
-        <input type="button" value="Eliminar últ. valor" onclick="calc.desapilar();"/> 
+        <input type="button" value="Eliminar últ." onclick="calc.desapilar();"/> 
+        <input type="button" value="√" onclick="calc.raiz();"/> 
     </form>
 </body>
 
