@@ -1,0 +1,26 @@
+/*********************
+Lara Fernández - UO276026
+Descripción de los estilos
+**********************/
+
+header, .item1 { grid-area: header; }
+nav, .item2 { grid-area: nav;}
+main, .item3 { grid-area: main; }
+footer, .item4 { grid-area: footer; }
+
+
+
+  body {
+    display: grid;
+    grid-template-areas:
+    'header header header header '
+    'nav main main main '
+    'footer footer footer footer  ';
+    
+  }
+
+  nav{
+    display:grid;  
+  }
+
+

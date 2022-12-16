@@ -1,0 +1,20 @@
+<!DOCTYPE persona [
+<!ELEMENT persona (lugarNacimiento, lugarResidencia, videos, amigos)>
+<!ELEMENT amigos ((persona, persona, persona)?)>
+<!ELEMENT lugarNacimiento (lugar)>
+<!ELEMENT lugarResidencia (lugar)>
+<!ELEMENT lugar (nombreLugar)>
+<!ELEMENT videos (video*)>
+<!ELEMENT video (#PCDATA)>
+<!ELEMENT nombreLugar (#PCDATA)>
+<!ATTLIST persona
+    nombre CDATA #REQUIRED
+    apellidos CDATA #REQUIRED
+    fechaNacimiento CDATA #REQUIRED
+    fotografia CDATA #REQUIRED
+    comentario CDATA #IMPLIED>
+<!ATTLIST lugar
+	latitud CDATA #REQUIRED
+    longitud CDATA #REQUIRED
+    altitud CDATA #REQUIRED> 
+]>

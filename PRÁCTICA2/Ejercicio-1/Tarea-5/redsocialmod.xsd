@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="persona">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="lugarNacimiento" />
+        <xs:element ref="lugarResidencia" />
+        <xs:element ref="videos" />
+        <xs:element ref="amigos" />
+      </xs:sequence>
+      <xs:attribute name="nombre" type="xs:string" use="required" />
+      <xs:attribute name="apellidos" type="xs:string" use="required" />
+      <xs:attribute name="fechaNacimiento" type="xs:date" use="required" />
+      <xs:attribute name="fotografia" type="xs:string" use="required" />
+      <xs:attribute name="comentario" type="xs:string" />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="amigos">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:sequence minOccurs="0" maxOccurs="1">
+          <xs:element ref="persona" />
+          <xs:element ref="persona" />
+          <xs:element ref="persona" />
+        </xs:sequence>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="lugarNacimiento">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="lugar" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="lugarResidencia">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="lugar" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="lugar">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="nombreLugar" />
+      </xs:sequence>
+      <xs:attribute name="latitud" type="xs:double" use="required" />
+      <xs:attribute name="longitud" type="xs:double" use="required" />
+      <xs:attribute name="altitud" type="xs:double" use="required" />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="videos">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="3" ref="video" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="video" type="xs:string" />
+  <xs:element name="nombreLugar" type="xs:string" />
+</xs:schema>

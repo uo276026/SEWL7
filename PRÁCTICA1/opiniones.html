@@ -1,0 +1,70 @@
+<!DOCTYPE HTML>
+
+<html lang="es">
+<head>
+    <!-- Datos que describen el documento, CODIFICACION DE CARACTERES -->
+    <meta charset="UTF-8" />
+    <title>Ruby: Su opinión</title>
+    <!--Metadatos de los documentos HTML5-->
+    <meta name ="author" content ="Lara Fernández Méndez" />
+    <meta name ="description" content ="Formulario para conocer su opinión sobre Ruby" />
+    <meta name ="keywords" content ="Ruby, versiones" />
+    <!--Definición de la ventana gráfica-->
+    <meta name ="viewport" content ="width=device-width, initial-scale=1.0" />
+    <!-- añadir el elemento link de enlace a la hoja de estilo dentro del <head> del documento html -->
+    <link rel="stylesheet" type="text/css" href="estilo/estilo.css" />
+    <link rel="stylesheet" type="text/css" href="estilo/layout.css" />
+</head>
+
+<body>
+<header> <h1>Lenguaje Ruby</h1></header>
+
+<nav>
+    <a accesskey="R" tabindex="1" href="index.html">Ruby </a> 
+    <a accesskey="V" tabindex="2" href="versiones.html">Versiones </a> 
+    <a accesskey="T" tabindex="3" href="tablaversiones.html">Tabla de Versiones </a> 
+    <a accesskey="O" tabindex="4" href="opiniones.html">Diganos su opinión </a> 
+    <a accesskey="I" tabindex="4" href="instalacion.html">Como instalar </a> 
+</nav>
+
+<main>
+    <!-- Datos con el contenidos que aparece en el navegador -->
+   <section>
+        <h2>Su opinión sobre Ruby:</h2>
+        <p>
+            Este formulario tiene como objetivo conocer la opinión de la gente sobre el lenguaje de programación Ruby, ya sea personas que lo han utilizado o que solamente hayan leido sobre ello
+        </p>
+    </section>
+
+    <section>
+        <h3>Formulario:</h3>
+        <form>
+            <p><label for="name">Su nombre y apellidos:</label> <input id="name" type="text"/></p>
+            <p><label for="date">Fecha actual:</label> <input id="date" type="date"/></p>
+            <p><label for="email">Correo electronico:</label> <input id="email" type="email"/></p>
+            <fieldset>
+                <legend> ¿Alguna vez ha utlizado Ruby? </legend>
+                <p><label for="used">Sí</label> <input id="used" type="radio"/></p>
+                <p><label for="notused">No</label> <input id="notused" type="radio"/></p>
+            </fieldset>
+            <fieldset>
+                <legend> ¿Que versiones de Ruby ha probado? </legend>
+                <p><label for="version1">1 (Desde 1.0 hasta 1.9)</label> <input id="version1" type="checkbox"/></p>
+                <p><label for="version2">2 (Desde 2.0 hasta 2.7)</label> <input id="version2" type="checkbox"/></p>
+                <p><label for="version3">3.0 </label> <input id="version3" type="checkbox"/></p>
+            </fieldset>
+            <p><label for="version">¿Que versión le ha gustado más?:</label> <input id="version" type=number min=1 max=3></p>
+            <p><label for="puntuacion">Como valoraria a Ruby, siendo el limite izquierdo un 1 y el derecho un 5:</label> <input id="puntuacion" type=range min=1 max=5 step=1 value=2.5 ></p>
+            <input type="submit" value="Enviar" />
+        </form>
+    </section>
+</main>
+
+    <footer>
+        <p>
+            Todos los derechos reservados a Ruby.
+        </p>
+     </footer>
+
+</body>
+</html>

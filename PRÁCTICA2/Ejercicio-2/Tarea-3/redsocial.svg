@@ -1,0 +1,144 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+            width="2800px" height="3000px" viewBox="0 0 2800 3000">
+	<g>
+		<text x="1500" y="41" font-weight="bold"> Lara Fernández Méndez </text>
+		<text x="1500" y="61" > Fecha Nacimiento: 2001-06-13 </text>
+		<text x="1500" y="101" font-style="italic"> Estudia ingenieria </text>
+		<text x="1500" y="141" > Lugar Nacimiento:  Gijon  </text>
+		<text x="1500" y="161" > Coordenadas: -5.6611 43.5322 13 </text>
+		<text x="1500" y="201" > Lugar Residencia:  Galicia  </text>
+		<text x="1500" y="221" > Coordenadas: -8.13385 42.57505 6 </text>
+	</g>
+	<line x1="1500" y1="230" x2="632" y2="400" />
+	<g>
+		<text x="632" y="441" font-weight="bold"> Laura Cordero Castrillo </text>
+		<text x="632" y="461" > Fecha Nacimiento: 2002-01-16 </text>
+		<text x="632" y="501" font-style="italic"> Le gusta leer </text>
+		<text x="632" y="541" > Lugar Nacimiento:  Avilés  </text>
+		<text x="632" y="561" > Coordenadas: -5.92466 43.55795 13 </text>
+		<text x="632" y="601" > Lugar Residencia:  Gijon  </text>
+		<text x="632" y="621" > Coordenadas: -5.6611 43.5322 13 </text>
+	</g>
+	<line x1="632" y1="630" x2="348" y2="800" />
+	<g>
+		<text x="348" y="841" font-weight="bold"> Hector Lavandeira Fernández </text>
+		<text x="348" y="861" > Fecha Nacimiento: 2008-01-12 </text>
+		<text x="348" y="901" font-style="italic"> Le gusta ver series </text>
+		<text x="348" y="941" > Lugar Nacimiento:  Oviedo  </text>
+		<text x="348" y="961" > Coordenadas: -5.84854 43.36225 13 </text>
+		<text x="348" y="1001" > Lugar Residencia:  Galicia  </text>
+		<text x="348" y="1021" > Coordenadas: -8.13385 42.57505 6 </text>
+	</g>
+	<line x1="632" y1="630" x2="632" y2="800" />
+	<g>
+		<text x="632" y="841" font-weight="bold"> Sonia Fernández Coto </text>
+		<text x="632" y="861" > Fecha Nacimiento: 2000-01-12 </text>
+		<text x="632" y="901" font-style="italic"> Le gusta ver peliculas </text>
+		<text x="632" y="941" > Lugar Nacimiento:  Oviedo  </text>
+		<text x="632" y="961" > Coordenadas: -5.84854 43.36225 13 </text>
+		<text x="632" y="1001" > Lugar Residencia:  Gijon  </text>
+		<text x="632" y="1021" > Coordenadas: -5.6611 43.5322 13 </text>
+	</g>
+	<line x1="632" y1="630" x2="915" y2="800" />
+	<g>
+		<text x="915" y="841" font-weight="bold"> Sara Fernández González </text>
+		<text x="915" y="861" > Fecha Nacimiento: 1992-03-11 </text>
+		<text x="915" y="901" font-style="italic"> Le gusta tejer </text>
+		<text x="915" y="941" > Lugar Nacimiento:  Santander  </text>
+		<text x="915" y="961" > Coordenadas: -3.82264 43.46363 10 </text>
+		<text x="915" y="1001" > Lugar Residencia:  Gijon  </text>
+		<text x="915" y="1021" > Coordenadas: -5.6611 43.5322 13 </text>
+	</g>
+	<line x1="1500" y1="230" x2="1500" y2="400" />
+	<g>
+		<text x="1500" y="441" font-weight="bold"> Rocío Gayo Alaez </text>
+		<text x="1500" y="461" > Fecha Nacimiento: 2001-06-13 </text>
+		<text x="1500" y="501" font-style="italic"> Estudia geología </text>
+		<text x="1500" y="541" > Lugar Nacimiento:  Galicia  </text>
+		<text x="1500" y="561" > Coordenadas: -8.13385 42.57505 6 </text>
+		<text x="1500" y="601" > Lugar Residencia:  Gijon  </text>
+		<text x="1500" y="621" > Coordenadas: -5.6611 43.5322 13 </text>
+	</g>
+	<line x1="1500" y1="630" x2="1216" y2="800" />
+	<g>
+		<text x="1216" y="841" font-weight="bold"> Iker Jiménez Herrero </text>
+		<text x="1216" y="861" > Fecha Nacimiento: 2011-09-22 </text>
+		<text x="1216" y="901" font-style="italic"> Le gustan los mangas </text>
+		<text x="1216" y="941" > Lugar Nacimiento:  Barcelona  </text>
+		<text x="1216" y="961" > Coordenadas: 2.16856 41.38739 6 </text>
+		<text x="1216" y="1001" > Lugar Residencia:  Langreo  </text>
+		<text x="1216" y="1021" > Coordenadas: -5.69605 43.30811 13 </text>
+	</g>
+	<line x1="1500" y1="630" x2="1500" y2="800" />
+	<g>
+		<text x="1500" y="841" font-weight="bold"> Jenni Rodriguez Velasco </text>
+		<text x="1500" y="861" > Fecha Nacimiento: 2022-01-01 </text>
+		<text x="1500" y="901" font-style="italic"> Viaja mucho </text>
+		<text x="1500" y="941" > Lugar Nacimiento:  Santander  </text>
+		<text x="1500" y="961" > Coordenadas: -3.82264 43.46363 10 </text>
+		<text x="1500" y="1001" > Lugar Residencia:  Gijon  </text>
+		<text x="1500" y="1021" > Coordenadas: -5.6611 43.5322 13 </text>
+	</g>
+	<line x1="1500" y1="630" x2="1783" y2="800" />
+	<g>
+		<text x="1783" y="841" font-weight="bold"> Fer González Sierra </text>
+		<text x="1783" y="861" > Fecha Nacimiento: 2012-12-12 </text>
+		<text x="1783" y="901" font-style="italic"> Le gusta el anime </text>
+		<text x="1783" y="941" > Lugar Nacimiento:  Santander  </text>
+		<text x="1783" y="961" > Coordenadas: -3.82264 43.46363 10 </text>
+		<text x="1783" y="1001" > Lugar Residencia:  Gijon  </text>
+		<text x="1783" y="1021" > Coordenadas: -5.6611 43.5322 13 </text>
+	</g>
+	<line x1="1500" y1="230" x2="2367" y2="400" />
+	<g>
+		<text x="2367" y="441" font-weight="bold"> Maite Rodas Bentivoglio </text>
+		<text x="2367" y="461" > Fecha Nacimiento: 2001-06-10 </text>
+		<text x="2367" y="501" font-style="italic"> En FP de enfermeria </text>
+		<text x="2367" y="541" > Lugar Nacimiento:  Barcelona  </text>
+		<text x="2367" y="561" > Coordenadas: 2.16856 41.38739 6 </text>
+		<text x="2367" y="601" > Lugar Residencia:  Langreo  </text>
+		<text x="2367" y="621" > Coordenadas: -5.69605 43.30811 13 </text>
+	</g>
+	<line x1="2367" y1="630" x2="2084" y2="800" />
+	<g>
+		<text x="2084" y="841" font-weight="bold"> Nuria Inchaurrandieta Fernández </text>
+		<text x="2084" y="861" > Fecha Nacimiento: 2004-04-22 </text>
+		<text x="2084" y="901" font-style="italic"> Va al gimnasio </text>
+		<text x="2084" y="941" > Lugar Nacimiento:  Gijon  </text>
+		<text x="2084" y="961" > Coordenadas: -5.6611 43.5322 13 </text>
+		<text x="2084" y="1001" > Lugar Residencia:  Barcelona  </text>
+		<text x="2084" y="1021" > Coordenadas: 2.16856 41.38739 6 </text>
+	</g>
+	<line x1="2367" y1="630" x2="2367" y2="800" />
+	<g>
+		<text x="2367" y="841" font-weight="bold"> Ana Fernández Ostio </text>
+		<text x="2367" y="861" > Fecha Nacimiento: 1992-12-23 </text>
+		<text x="2367" y="901" font-style="italic"> Ve twitch </text>
+		<text x="2367" y="941" > Lugar Nacimiento:  Langreo  </text>
+		<text x="2367" y="961" > Coordenadas: -5.69605 43.30811 13 </text>
+		<text x="2367" y="1001" > Lugar Residencia:  Barcelona  </text>
+		<text x="2367" y="1021" > Coordenadas: 2.16856 41.38739 13 </text>
+	</g>
+	<line x1="2367" y1="630" x2="2651" y2="800" />
+	<g>
+		<text x="2651" y="841" font-weight="bold"> Alicia Fernández Pushkina </text>
+		<text x="2651" y="861" > Fecha Nacimiento: 2009-09-30 </text>
+		<text x="2651" y="901" font-style="italic"> None </text>
+		<text x="2651" y="941" > Lugar Nacimiento:  Barcelona  </text>
+		<text x="2651" y="961" > Coordenadas: 2.16856 41.38739 13 </text>
+		<text x="2651" y="1001" > Lugar Residencia:  Oviedo  </text>
+		<text x="2651" y="1021" > Coordenadas: -5.84854 43.36225 13 </text>
+	</g>
+            <style><![CDATA[
+            text{
+                dominant-baseline: middle;
+                text-anchor: middle;
+                font: 20 Verdana, Helvetica, Arial, sans-serif;
+            }
+            line {
+                stroke:rgb(0,0,0);
+                stroke-width:2;
+            }
+            ]]></style>
+        </svg>
+            

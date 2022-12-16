@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<persona nombre="Lara" apellidos="Fernández Méndez" fechaNacimiento='2001-06-13' fotografia="multimedia/fotografia.jpg" comentario="Estudia ingenieria">
+	<lugarNacimiento >
+		<lugar longitud="43.5322" latitud="-5.6611" altitud="13">
+			<nombreLugar> Gijon </nombreLugar>
+		</lugar>
+	</lugarNacimiento>
+	<lugarResidencia>
+		<lugar  longitud="42.57505" latitud="-8.13385" altitud="6">
+			<nombreLugar> Galicia </nombreLugar>
+		</lugar>
+	</lugarResidencia>
+	<videos>
+		<video> multimedia/waves.mp4 </video>
+		<video> multimedia/waves.mp4 </video>
+	</videos>
+	<amigos>
+		<persona nombre="Laura" apellidos="Cordero Castrillo" fechaNacimiento='2002-01-16' fotografia="multimedia/fotografia1.jpg"  comentario="Le gusta leer">
+			<lugarNacimiento >
+				<lugar longitud="43.55795" latitud="-5.92466" altitud="13">
+					<nombreLugar> Avilés </nombreLugar>
+				</lugar>
+			</lugarNacimiento>
+			<lugarResidencia>
+				<lugar longitud="43.5322" latitud="-5.6611" altitud="13">
+					<nombreLugar> Gijon </nombreLugar>
+				</lugar>
+			</lugarResidencia>
+			<videos></videos>
+			<amigos>
+				<persona nombre="Hector" apellidos="Lavandeira Fernández" fechaNacimiento='2008-01-12' fotografia="multimedia/fotografia10.jpg"  comentario="Le gusta ver series">
+					<lugarNacimiento >
+						<lugar  longitud="43.36225" latitud="-5.84854" altitud="13">
+							<nombreLugar> Oviedo </nombreLugar>
+						</lugar>
+					</lugarNacimiento>
+					<lugarResidencia>
+						<lugar  longitud="42.57505" latitud="-8.13385" altitud="6">
+							<nombreLugar> Galicia </nombreLugar>
+						</lugar>
+					</lugarResidencia>
+					<videos>
+						<video> multimedia/waves.mp4 </video>
+						<video> multimedia/waves.mp4 </video>
+						<video> multimedia/waves.mp4 </video>
+					</videos>
+					<amigos></amigos>
+				</persona>
+				<persona nombre="Sonia" apellidos="Fernández Coto" fechaNacimiento='2000-01-12' fotografia="multimedia/fotografia2.jpg" comentario="Le gusta ver peliculas">
+					<lugarNacimiento >
+						<lugar  longitud="43.36225" latitud="-5.84854" altitud="13">
+							<nombreLugar> Oviedo </nombreLugar>
+						</lugar>
+					</lugarNacimiento>
+					<lugarResidencia>
+						<lugar longitud="43.5322" latitud="-5.6611" altitud="13">
+							<nombreLugar> Gijon </nombreLugar>
+						</lugar>
+					</lugarResidencia>
+					<videos></videos>
+					<amigos></amigos>
+				</persona>
+				<persona nombre="Sara" apellidos="Fernández González" fechaNacimiento='1992-03-11' fotografia="multimedia/fotografia3.jpg" comentario="Le gusta tejer">
+					<lugarNacimiento >
+						<lugar  longitud="43.46363" latitud="-3.82264" altitud="10">
+							<nombreLugar> Santander </nombreLugar>
+						</lugar>
+					</lugarNacimiento>
+					<lugarResidencia>
+						<lugar longitud="43.5322" latitud="-5.6611" altitud="13">
+							<nombreLugar> Gijon </nombreLugar>
+						</lugar>
+					</lugarResidencia>
+					<videos>
+						<video> multimedia/waves.mp4 </video>
+					</videos>
+					<amigos></amigos>
+				</persona>
+			</amigos>
+		</persona>
+		<persona nombre="Rocío" apellidos="Gayo Alaez" fechaNacimiento='2001-06-13' fotografia="multimedia/fotoRo.jpg" comentario="Estudia geología">
+			<lugarNacimiento >
+				<lugar  longitud="42.57505" latitud="-8.13385" altitud="6">
+					<nombreLugar> Galicia </nombreLugar>
+				</lugar>
+			</lugarNacimiento>
+			<lugarResidencia>
+				<lugar longitud="43.5322" latitud="-5.6611" altitud="13">
+					<nombreLugar> Gijon </nombreLugar>
+				</lugar>
+			</lugarResidencia>
+			<videos></videos>
+			<amigos>
+				<persona nombre="Iker" apellidos="Jiménez Herrero" fechaNacimiento='2011-09-22' fotografia="multimedia/fotografia11.jpg" comentario="Le gustan los mangas">
+					<lugarNacimiento >
+						<lugar  longitud="41.38739" latitud="2.16856" altitud="6">
+							<nombreLugar> Barcelona </nombreLugar>
+						</lugar>
+					</lugarNacimiento>
+					<lugarResidencia>
+					<lugar  longitud="43.30811" latitud="-5.69605" altitud="13">
+						<nombreLugar> Langreo </nombreLugar>
+					</lugar>
+					</lugarResidencia>
+					<videos></videos>
+					<amigos></amigos>
+				</persona>
+				<persona nombre="Jenni" apellidos="Rodriguez Velasco" fechaNacimiento='2022-01-01' fotografia="multimedia/fotografia5.jpg"  comentario="Viaja mucho">
+					<lugarNacimiento >
+						<lugar  longitud="43.46363" latitud="-3.82264" altitud="10">
+							<nombreLugar> Santander </nombreLugar>
+						</lugar>
+					</lugarNacimiento>
+					<lugarResidencia>
+						<lugar longitud="43.5322" latitud="-5.6611" altitud="13">
+							<nombreLugar> Gijon </nombreLugar>
+						</lugar>
+					</lugarResidencia>
+					<videos></videos>
+					<amigos></amigos>
+				</persona>
+				<persona nombre="Fer" apellidos="González Sierra" fechaNacimiento='2012-12-12' fotografia="multimedia/fotografia12.jpg"  comentario="Le gusta el anime">
+					<lugarNacimiento >
+						<lugar  longitud="43.46363" latitud="-3.82264" altitud="10">
+							<nombreLugar> Santander </nombreLugar>
+						</lugar>
+					</lugarNacimiento>
+					<lugarResidencia>
+						<lugar longitud="43.5322" latitud="-5.6611" altitud="13">
+							<nombreLugar> Gijon </nombreLugar>
+						</lugar>
+					</lugarResidencia>
+					<videos></videos>
+					<amigos></amigos>
+				</persona>
+			</amigos>
+		</persona>
+		<persona nombre="Maite" apellidos="Rodas Bentivoglio" fechaNacimiento='2001-06-10' fotografia="multimedia/fotografia6.jpg"  comentario="En FP de enfermeria">
+			<lugarNacimiento >
+				<lugar  longitud="41.38739" latitud="2.16856" altitud="6">
+							<nombreLugar> Barcelona </nombreLugar>
+						</lugar>
+			</lugarNacimiento>
+			<lugarResidencia>
+				<lugar  longitud="43.30811" latitud="-5.69605" altitud="13">
+					<nombreLugar> Langreo </nombreLugar>
+				</lugar>
+			</lugarResidencia>
+			<videos></videos>
+			<amigos>
+				<persona nombre="Nuria" apellidos="Inchaurrandieta Fernández" fechaNacimiento='2004-04-22' fotografia="multimedia/fotografia7.jpg" comentario="Va al gimnasio">
+					<lugarNacimiento >
+						<lugar longitud="43.5322" latitud="-5.6611" altitud="13">
+							<nombreLugar> Gijon </nombreLugar>
+						</lugar>
+					</lugarNacimiento>
+					<lugarResidencia>
+						<lugar  longitud="41.38739" latitud="2.16856" altitud="6">
+							<nombreLugar> Barcelona </nombreLugar>
+						</lugar>
+					</lugarResidencia>
+					<videos></videos>
+					<amigos></amigos>
+				</persona>
+				<persona nombre="Ana" apellidos="Fernández Ostio" fechaNacimiento='1992-12-23' fotografia="multimedia/fotografia8.jpg" comentario="Ve twitch">
+					<lugarNacimiento >
+						<lugar  longitud="43.30811" latitud="-5.69605" altitud="13">
+							<nombreLugar> Langreo </nombreLugar>
+						</lugar>
+					</lugarNacimiento>
+					<lugarResidencia>
+						<lugar  longitud="41.38739" latitud="2.16856" altitud="13">
+							<nombreLugar> Barcelona </nombreLugar>
+						</lugar>
+					</lugarResidencia>
+					<videos></videos>
+					<amigos></amigos>
+				</persona>
+				<persona nombre="Alicia" apellidos="Fernández Pushkina" fotografia="multimedia/fotografia9.jpg" fechaNacimiento='2009-09-30'>
+					<lugarNacimiento >
+						<lugar  longitud="41.38739" latitud="2.16856" altitud="13">
+							<nombreLugar> Barcelona </nombreLugar>
+						</lugar>
+					</lugarNacimiento>
+					<lugarResidencia>
+						<lugar  longitud="43.36225" latitud="-5.84854" altitud="13">
+							<nombreLugar> Oviedo </nombreLugar>
+						</lugar>
+					</lugarResidencia>
+					<videos></videos>
+					<amigos></amigos>
+				</persona>
+			</amigos>
+		</persona>
+	</amigos>
+</persona>

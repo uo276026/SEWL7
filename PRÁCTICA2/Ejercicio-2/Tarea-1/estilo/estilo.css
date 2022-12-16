@@ -1,0 +1,54 @@
+/*********************
+Lara Fernández - UO276026
+Descripción de los estilos
+**********************/
+
+/* Especifidad 001 */
+body{
+  font-family: Garamond, serif;
+  gap: 0.625em;
+  background-color: #fff;
+  padding: 0.625em;
+  color: #545454; 
+  
+}
+
+/* Especifidad 001 */
+header {
+  font-family: Garamond, serif;
+  color: #fff;    
+  background-color:	#F42D2D; 
+  text-transform: uppercase;
+  padding: 1em;  
+  text-align:center
+}
+
+/* Especifidad 001 */
+main {  
+  padding: 1em;
+  font-family: Arial, sans-serif;
+}
+
+/* Especifidad 001 */
+h2, h3{
+  color:#232323; 
+  background-color:	#FFEAAE; 
+  width:18.75em;
+  font-family: Arial, sans-serif;
+}
+
+
+
+/* Especifidad 001 */
+video{
+    height: 50%;
+    width:90%;
+}
+
+
+
+p{
+  text-align:justify
+}
+
+

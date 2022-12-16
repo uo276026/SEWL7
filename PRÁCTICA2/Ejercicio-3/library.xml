@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <set>
+  <book>
+    <title>Dark Tower</title>
+    <part>
+      <title>Part I</title>
+        <chapter>
+            <title>The Gunslinger</title>
+            <para>The man in black fled across the desert, and the gunslinger followed.</para>
+            <para>The desert was the apotheosis of all deserts, huge, standing to the sky for what might have been parsecs in all directions.</para>
+        </chapter>
+        <chapter>
+            <title>The Way Station</title>
+            <para>A nursery rhyme had been playing itself through his mind all day.</para>
+        </chapter>
+    </part>
+    <author>
+        <firstname>Stephen</firstname>
+        <surname>King</surname>
+    </author>
+    <article>
+    <title>Articulo importante</title>
+    <part>
+        <chapter>
+        <para>Es muy importante la lectura de este articulo</para>
+        </chapter>
+    </part>
+    </article>
+  </book>
+
+  <article>
+    <author>
+      <firstname>Nuria</firstname>
+      <surname>Fernández</surname>
+    </author>
+  <publisher>
+    <publishername>Google</publishername>
+    <address><street>141</street></address>
+  </publisher>
+  <pubdate>2022</pubdate>
+  <title>Economia en paises de Europa</title>
+  <para>Con objeto de observar las tendencias de la investigación sobre salud en Europa, se analizó la producción de artículos resultantes de investigaciones biomédicas</para>
+  </article>
+
+  <book>
+    <title> El libro mas corto del mundo </title>
+    <chapter>
+      <title>Primer capitulo</title>
+      <para> Si </para>
+    
+    </chapter>
+  </book>
+</set>
