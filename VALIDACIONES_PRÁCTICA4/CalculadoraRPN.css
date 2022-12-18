@@ -1,0 +1,96 @@
+/*********************
+Lara Fernández - UO276026
+Descripción de los estilos
+**********************/
+
+
+
+h1{
+    color:#123944; 
+    background-color: white;
+    font-family: Arial, sans-serif;
+}
+
+p{
+  text-align:justify;
+  
+}
+
+
+label {
+  grid-column-end: span 5;
+  font-size:1.5em;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  background-color: #9CC387;
+  color:#1F1F1F;
+}
+
+form {
+  color: white;
+  background-color: #9CC387;
+  width: max-content;
+  border-radius: 0.625em;
+  padding: 1.2em;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(5, 3em);
+  grid-template-rows: repeat(13, 3em);
+  gap: 1em;
+}
+
+input{
+  font-size: 1em;
+}
+
+textarea {
+  background-color: #B8B3A8;
+  color:#4D4D4D;
+  text-align: left;
+  border-radius: 0.625em;
+  grid-column-end: span 5;
+  grid-row-end: span 4;
+  font-size:1.5em;
+  resize: none;
+  
+}
+
+
+input[type=text] {
+  background-color: #B8B3A8;
+  text-align: right;
+  color:#4D4D4D;
+  border-radius: 0.625em;
+  grid-column-end: span 5;
+  grid-row-end: span 1;
+  font-size:1.5em;
+  
+}
+
+input[type=button] {
+  font-weight: bold;
+    border:none;
+}
+
+input[value="ENTER"], input[value="↑"]
+{
+    grid-column-end: span 2;
+}
+
+input[value="Vaciar"]
+{
+    grid-column-end: span 2;
+}
+
+input[value="Eliminar últ."]
+{
+    grid-column-end: span 2;
+}
+
+div
+{
+    grid-column-end: span 5;
+    display: grid;
+    grid-template-columns: repeat(5, 3em);
+    gap: 1em;
+}
