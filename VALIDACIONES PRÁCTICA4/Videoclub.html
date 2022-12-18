@@ -1,0 +1,147 @@
+<!DOCTYPE HTML>
+
+<html lang="es">
+<head>
+    <!-- Datos que describen el documento, CODIFICACION DE CARACTERES -->
+    <meta charset="UTF-8" />
+    <title>Videoclub</title>
+    <!--Metadatos de los documentos HTML5-->
+    <meta name ="author" content ="Lara Fernández Méndez" />
+    <meta name ="description" content ="Un videoclub para alquilar peliculas" />
+    <meta name ="keywords" content ="videoclub, bbdd, peliculas" />
+    <!--Definición de la ventana gráfica-->
+    <meta name ="viewport" content ="width=device-width, initial-scale=1.0" />
+    <!-- añadir el elemento link de enlace a la hoja de estilo dentro del <head> del documento html -->
+    <link rel="stylesheet" type="text/css" href="Ejercicio7.css" />
+</head>
+
+<body>
+    <header><h1>Videoclub</h1></header>
+    <p></p>
+    <h2>Resultados:</h2>
+    <h3>PELICULAS: </h3>
+    <table>
+        <thead>
+        <tr>
+            <th> Nombre </th>
+            <th> Genero </th>
+            <th> Puntuación </th>
+            <th> Director </th>
+            <th> ¿Esta alquilada? </th>
+            <th> Precio </th>
+        </tr>
+        </thead><tbody> <tr>
+                <td>La Naranja Mecánica</td>
+                <td>Ciencia Ficcion</td>
+                <td>9</td>
+                <td>Stanley Kubrick</td>
+                <td>sí</td>
+                <td>10€</td>
+                </tr> <tr>
+                <td>El Resplandor</td>
+                <td>Terror</td>
+                <td>8</td>
+                <td>Stanley Kubrick</td>
+                <td>no</td>
+                <td>10€</td>
+                </tr> <tr>
+                <td>Pulp Fiction</td>
+                <td>Comedia</td>
+                <td>9</td>
+                <td>Quentin Tarantino</td>
+                <td>no</td>
+                <td>14€</td>
+                </tr> <tr>
+                <td>Reservoir Dogs</td>
+                <td>Acción</td>
+                <td>8</td>
+                <td>Quentin Tarantino</td>
+                <td>sí</td>
+                <td>15€</td>
+                </tr> <tr>
+                <td>Los odiosos ocho</td>
+                <td>Western</td>
+                <td>7</td>
+                <td>Quentin Tarantino</td>
+                <td>no</td>
+                <td>12€</td>
+                </tr> <tr>
+                <td>Kill Bill</td>
+                <td>Acción</td>
+                <td>8</td>
+                <td>Quentin Tarantino</td>
+                <td>no</td>
+                <td>11€</td>
+                </tr> <tr>
+                <td>Psicosis</td>
+                <td>Terror</td>
+                <td>9</td>
+                <td>Alfred Hitchcock</td>
+                <td>no</td>
+                <td>5€</td>
+                </tr> <tr>
+                <td>Iron Man</td>
+                <td>Acción</td>
+                <td>4</td>
+                <td>Kevin Feige</td>
+                <td>no</td>
+                <td>6€</td>
+                </tr> <tr>
+                <td>Los Vengadores</td>
+                <td>Ciencia Ficcion</td>
+                <td>6</td>
+                <td>Kevin Feige</td>
+                <td>sí</td>
+                <td>7€</td>
+                </tr> <tr>
+                <td>Spider-Man: Homecoming</td>
+                <td>Ciencia Ficcion</td>
+                <td>3</td>
+                <td>Kevin Feige</td>
+                <td>no</td>
+                <td>5€</td>
+                </tr> </tbody></table>
+    <h2>Opciones Administradoraa:</h2>
+    <form action='#' method='post'>
+        <p><input type = 'submit' class='button' name = 'crearBaseDatos' value = 'Crear Base de Datos'/></p>
+        <p><input type = 'submit' class='button' name = 'crearTablas' value = 'Crear tablas'/></p>
+        <p><input type = 'submit' class='button' name = 'insertarDatos' value = 'Insertar datos'/></p>
+        <p><input type = 'submit' class='button' name = 'dropTables' value = 'Eliminar tablas'/></p>
+    </form>
+    <form action='#' method='post'>
+        <h3>Añadir pelicula</h3>
+        <p><label>Nombre pelicula: <input type='text' name='nombre' required></label></p>
+        <p><label>Puntuación: <input type='number' name='puntuacion' required min='0' max='10'></label></p>
+        <p><label>Precio: <input type='number' name='precio' required ></label></p> <label>Director: </label><select name='director'><option id=director.0 value=1>Stanley Kubrick</option><option id=director.1 value=2>Quentin Tarantino</option><option id=director.2 value=3>Alfred Hitchcock</option><option id=director.3 value=4>Kevin Feige</option></select>  <label>Género: </label><select name='genero'><option id=genero.0 value=1>Terror</option><option id=genero.1 value=2>Comedia</option><option id=genero.2 value=3>Drama</option><option id=genero.3 value=4>Ciencia Ficcion</option><option id=genero.4 value=5>Western</option><option id=genero.5 value=6>Fantasía</option><option id=genero.6 value=7>Romántico</option><option id=genero.7 value=8>Musical</option><option id=genero.8 value=9>Acción</option></select>    
+    <p><input type = 'submit' class='button' name = 'añadirPelicula' value = 'Añadir pelicula'/></p>
+    </form>
+
+    <form action='#' method='post'>
+        <h2>Registrarse como usuario</h2>
+        <p><label>DNI: <input type='text' name='dni' required></label></p>
+        <p><label>Nombre: <input type='text' name='nombre' required></label></p>
+        <p><label>Apellidos: <input type='text' name='apellidos' required></label></p>
+        <p><label>Email: <input type='text' name='email' required></label></p>
+        <p><label>Telefono: <input type='text' name='telefono' required></label></p>
+        <p><input type = 'submit' class='button' name = 'registrarse' value = 'Registrarse'/></p>
+    </form>
+
+    <h2>Peliculas</h2>
+    <form action='#' method='post'>
+        <p><input type = 'submit' class='button' name = 'mostrarPeliculas' value = 'Ver Peliculas Disponibles'/></p>
+    </form>
+    <form action='#' method='post'>
+        <p><label>DNI: <input type='text' name='dni' required></label>
+        <input type = 'submit' class='button' name = 'mostrarMisPeliculasAlquiladas' value = 'Ver Mis Peliculas Alquiladas'/></p>
+    </form>
+    <form action='#' method='post'>
+        <h3>Alquiler de Pelicula</h3>
+        <p><label>DNI: <input type='text' name='dni' required></label></p>
+        <p><label>Nombre de pelicula: <input type='text' name='nombrePelicula' required></label></p>
+        <p><label>Número de cuenta bancaria (Ej: 123): <input type='text' name='numCuentaBanco' required></label></p>
+        <p><input type = 'submit' class='button' name = 'alquilar' value = 'Alquilar'/></p>
+    </form>
+
+    </body>
+
+</html>

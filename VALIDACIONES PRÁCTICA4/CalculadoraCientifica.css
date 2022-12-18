@@ -1,0 +1,94 @@
+/*********************
+Lara Fernández - UO276026
+Descripción de los estilos
+**********************/
+
+
+
+h1{
+    color:#123944; 
+    background-color: white;
+    font-family: Arial, sans-serif;
+}
+
+p{
+  text-align:justify;
+  
+}
+
+
+label {
+  grid-column-end: span 5;
+  font-size:1.5em;
+  background-color: #E3E2E2;
+  color: black;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+}
+
+
+form {
+  color: white;
+  background-color: #E3E2E2;
+  width: max-content;
+  padding: 1.2em;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(5, 5em);
+  grid-template-rows: repeat(12, 3em);
+  gap: 1em;
+}
+
+div
+{
+    grid-column-end: span 5;
+    display: grid;
+    grid-template-columns: repeat(5, 5em);
+    gap: 1em;
+}
+
+input{
+  font-size: 1em;
+  border:none;
+}
+
+
+input[type=text] {
+  background-color: #E3E2E2;
+  color:#4D4D4D;
+  text-align: right;
+  grid-column-end: span 5;
+  grid-row-end: span 2;
+  font-size:1.5em;
+  font-weight: bold;
+ 
+  
+}
+
+input[type=button]{
+  background-color: #EFEFEF;
+  color:black;
+}
+
+input[value="MC"], 
+input[value="MR"], 
+input[value="MS"],
+input[value="M+"],
+input[value="M-"],
+input[value="DEG"],
+input[value="RAD"],
+input[value="GRAD"],
+input[value="HYP"],
+input[value="F-E"] {
+  font-weight: bold;
+  color:#4D4D4D;
+  background-color: #E3E2E2;
+}
+
+
+
+
+
+
+
+
