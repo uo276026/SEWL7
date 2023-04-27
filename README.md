@@ -7,3 +7,5 @@
 - PRÁCTICA 3 Ej 7: https://uo276026.github.io/SEWL7/PR%C3%81CTICA3-PARTE2/Ejercicio-07/Ejercicio7.html
 - PRÁCTICA 3 Ej 8: https://uo276026.github.io/SEWL7/PR%C3%81CTICA3-PARTE2/Ejercicio-08/Ejercicio8.html
 - Calculadora RPN SEMINARIO: https://uo276026.github.io/SEWL7/CalculadoraRPN-SEMINARIO/CalculadoraRPN.html
+
+Están todas las prácticas, aunque aqui no salga el link de algunas
